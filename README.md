@@ -17,6 +17,12 @@
   <img width="12" />
 </div>
 
+<!-- Pacman Contribution Graph -->
 <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/diegojbcunha/diegojbcunha/output/pacman-contribution-graph.svg">
-<!-- Workflow trigger -->
-##
+
+<!-- Workflow Status -->
+<p align="center">
+  <a href="https://github.com/diegojbcunha/diegojbcunha/actions/workflows/pacman.yml">
+    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/diegojbcunha/diegojbcunha/Generate%20Pac-Man%20Contribution%20Graph">
+  </a>
+</p>
