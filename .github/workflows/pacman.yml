@@ -15,14 +15,9 @@ jobs:
           fetch-depth: 0
 
       - name: Generate Pacman Contribution Graph
-        uses: abozanona/pacman-contribution-graph@main
+        uses: julianoe/pacman-contributions-action@v1.0.0
         with:
-          github_user_name: diegojbcunha
-          
-      - name: Ensure output directory exists
-        run: |
-          mkdir -p output
-          mv pacman-contribution-graph.svg output/
+          username: diegojbcunha
           
       - name: Deploy to Output Branch
         uses: peaceiris/actions-gh-pages@v3
