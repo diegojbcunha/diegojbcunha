@@ -18,7 +18,9 @@
 </div>
 
 <!-- Pacman Contribution Graph -->
-<img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/diegojbcunha/diegojbcunha/output/pacman-contribution-graph.svg">
+<p align="center">
+  <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/diegojbcunha/diegojbcunha/output/pacman.svg">
+</p>
 
 <!-- Workflow Status -->
 <p align="center">
