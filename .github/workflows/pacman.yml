@@ -14,10 +14,18 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
 
-      - name: Generate Pacman Contribution Graph
-        uses: julianoe/pacman-contributions-action@v1.0.0
+      - name: Generate GitHub Contributions Snake
+        uses: Platane/snk@v3
         with:
-          username: diegojbcunha
+          github_user_name: diegojbcunha
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          
+      - name: Ensure output directory exists
+        run: |
+          mkdir -p output
+          cp dist/github-contribution-grid-snake.svg output/pacman.svg
           
       - name: List output files
         run: |
