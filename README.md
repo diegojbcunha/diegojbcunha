@@ -18,5 +18,5 @@
 </div>
 
 <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/diegojbcunha/diegojbcunha/output/pacman-contribution-graph.svg">
-
+<!-- Workflow trigger -->
 ##
