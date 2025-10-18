@@ -1,14 +1,12 @@
-name: Generate pacman animation
+name: Generate Pac-Man Animation
 
 on:
-  schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
-
+  schedule:
+    - cron: "0 */12 * * *" # Corrige o cron para "a cada 12 horas"
   workflow_dispatch:
-
   push:
     branches:
-    - main
+      - main
 
 jobs:
   generate:
@@ -18,13 +16,24 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      - name: generate pacman-contribution-graph.svg
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Necessário para ações que dependem do histórico de commits
+
+      - name: Generate Pacman Contribution Graph
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
 
+      - name: Check Generated Files
+        run: |
+          echo "Listing files in dist directory:"
+          ls -la dist || echo "Directory dist not found"
+          echo "Listing files in root directory:"
+          ls -la
 
-      - name: push pacman-contribution-graph.svg to the output branch
+      - name: Push Pacman Contribution Graph to Output Branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
