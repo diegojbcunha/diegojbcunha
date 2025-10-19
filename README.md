@@ -15,9 +15,9 @@
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=bootstrap" height="60" alt="bootstrap logo"  />
   <img width="12" />
-  <img src="https://skillicons.dev/icons?i=git" height="60" alt="bootstrap logo"  />
+  <img src="https://skillicons.dev/icons?i=git" height="60" alt="git logo"  />
   <img width="12" />
-  <img src="https://skillicons.dev/icons?i=bootstrap" height="github" alt="bootstrap logo"  />
+  <img src="https://skillicons.dev/icons?i=github" height="60" alt="github logo"  />
   <img width="12" />
 </div>
 
